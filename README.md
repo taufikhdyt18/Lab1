@@ -67,3 +67,5 @@ Output Format
 Pesan validasi stok jika stok tidak mencukupi.
 Struk transaksi jika transaksi berhasil.
 ```
+
+## Selesai
