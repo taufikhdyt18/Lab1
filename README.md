@@ -11,8 +11,33 @@
 
 ### Anda diminta untuk membuat program yang dapat mensimulasikan transaksi pembelian pada toko tersebut. Program harus mampu melakukan hal-hal berikut:
 
+- Masuk ke terminal mysql
 
+```
+#mysql -h127.0.0.1 -uroot
+```
 
+- Buat Database dan gunakan Database
+```
+CREATE DATABASE toko_online;
+USE toko_online;
+```
+- Buat Table Product
+```
+CREATE TABLE product (
+    id VARCHAR(10) PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    harga DECIMAL(10,2) NOT NULL,
+    stok INT NOT NULL
+);
+```
+- buat data dalam product
+```
+INSERT INTO products (id, nama, harga, stok) VALUES
+('P001', 'KEMEJA', 150000, 10),
+('P002', 'CELANA', 200000, 5),
+('P003', 'SEPATU', 500000, 7);
+```
 #### 1. Memilih Produk
 -	a. Pembeli memasukkan ID produk yang ingin dibeli dan jumlahnya.
  
